@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const companies = [{
     001: {
         name: "Amazon",
