@@ -20,3 +20,9 @@ const companies = [{
         kind: "Internet Company"
     }
 }]
+
+function show(companies) {
+    return "Amazon ............... 1994", "Facebook ............ 2004", "Alphabet Inc. .......... 2015"
+}
+
+console.log(show(companies))
