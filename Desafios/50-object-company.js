@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const companies = [{
     001: {
         name: "Amazon",
@@ -20,9 +21,3 @@ const companies = [{
         kind: "Internet Company"
     }
 }]
-
-function show(companies) {
-
-}
-
-show(companies)
