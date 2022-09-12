@@ -12,5 +12,5 @@ function checker(lado1, lado2, lado3) {
     }
   }
   
-console.log(checker(0, 0, 0)) 
+console.log(checker(10, 10, 10)) 
   
