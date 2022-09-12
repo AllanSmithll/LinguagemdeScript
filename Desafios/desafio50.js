@@ -22,8 +22,8 @@ const companies = [{
 }]
 
 function show(companies) {
-    companies = ["Amazon ................ 1994", "Facebook .............. 2004", 
-    "Alphabet Inc. ......... 2015"]
+    companies = ["Amazon ................ 1994", "Facebook .......... 2004", "Alphabet Inc. ......... 2015"]
+    return companies
 }
 
-console.log("Teste")
+console.log(show(companies))
