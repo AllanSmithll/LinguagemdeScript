@@ -22,8 +22,10 @@ const companies = [{
 }]
 
 function show(companies) {
-    companies = ["Amazon ................ 1994", "Facebook .......... 2004", "Alphabet Inc. ......... 2015"]
     return companies
+        .map((company) => [company.name, company.founded])
+        .map((company) => `<tr><td>${company.join('<tr><td>')} <tr><td>`)
+        .join('')
 }
 
 console.log(show(companies))
