@@ -15,3 +15,7 @@ console.log("Anda \" menos") //Mostra as aspas
 console.log("I \u2661 Javascript\n") //Código Ansi para coração
 
 console.log("Concatenação e Template:\n")
+let named = "John"
+console.log("Hello, " + named)
+const id = '1'
+const row = `<td>`
