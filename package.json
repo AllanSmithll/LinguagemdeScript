@@ -2,7 +2,7 @@
   "name": "linguagemdescript",
   "version": "1.0.0",
   "description": "Códigos dos exercícios e práticas das aulas de Linguagem de Script, do curso de Sistemas para Internet.",
-  "main": "index.js",
+  "main": "if-else.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
