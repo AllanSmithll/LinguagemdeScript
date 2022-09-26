@@ -8,7 +8,7 @@ console.log(number)
 
 //Escopo
 
-var num = 30 //VAR aceita repetição de variável, o que é mal visto pela boas práticas
-var num = 30
+var num = 30 // VAR aceita repetição de variável, o que é mal visto pelas boas práticas
+var num = 40
 
-co
+console.log(num)
