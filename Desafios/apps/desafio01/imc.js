@@ -9,4 +9,4 @@ function imc(peso, altura) {
     }
     return result
 }
-console.log(imc(100, 1.70))
+
