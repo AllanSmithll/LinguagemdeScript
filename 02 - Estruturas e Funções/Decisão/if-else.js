@@ -1,11 +1,11 @@
 // 26/09/2022
 const number = 10;
 const number2 = 20;
-const operator = "+"
+const operator = "-"
 
 // decisão
 
-if (operator === "+" {
+if (operator === "+") {
   result = number + number2
 } else if (operator === "-") {     //E só vale + ou -, hein
   result = number - number2
