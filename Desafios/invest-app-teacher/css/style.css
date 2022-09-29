@@ -1,0 +1,7 @@
+.insertion  {
+    display: grid;
+    align-content: center;
+    place-items: center;
+    min-height: 100vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
