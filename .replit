@@ -1,4 +1,4 @@
-entrypoint = "00 - Hello/console.js"
+entrypoint = "04 - object-array.js"
 
 hidden = [".config"]
 
