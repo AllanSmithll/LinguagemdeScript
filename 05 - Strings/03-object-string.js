@@ -8,6 +8,3 @@ console.log('Lorem Ipsum'.length)
 // Métodos
 
 // includes, repeat, startsWith, endsWith, substr, substring, slice, split, toLowerCase, topUpperCase, match, replace, search, trim, padStart
-
-const frase = "Sou lindo"
-console.log(toUpperCase(frase))
