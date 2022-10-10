@@ -5,8 +5,7 @@
 function primos(quantidade) {
     prim = [2, 3, 5, 7, 11, 13, 17, 19, 23, 27]
     result = ""
-    cont = 0
-    while (result.length !== quantidade) {
+    while (length(result) !== quantidade) {
         for (let v of prim) {
             result += v
         }
