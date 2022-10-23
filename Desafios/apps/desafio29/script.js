@@ -1,18 +1,18 @@
 // Vou criar uma função básica, que será o de limpar o salário
 
 function limpar_formulario() {
-    document.getElementsById('rua').value("");
-    document.getElementsById('numero').value("");
-    document.getElementsById('bairro').value("");
-    document.getElementsById('estado').value("");
-    document.getElementsById('cidade').value("");
+    document.getElementById('rua').value("");
+    document.getElementById('numero').value("");
+    document.getElementById('bairro').value("");
+    document.getElementById('estado').value("");
+    document.getElementById('cidade').value("");
 }
 
 // Agora, minha resposta será devolvida a partir dessa função
 
 function minha_resposta(conteudo) {
     if (("erro" in conteudo)) {
-        document.getElementsById('rua').value=(conteudo.logradouro);
+        document.getElementsById('rua').value=(conteudo.rua);
         document.getElementsById('numero').value=(conteudo.numero);
         document.getElementsById('bairro').value=(conteudo.bairro);
         document.getElementsById('estado').value=(conteudo.estado);
@@ -28,7 +28,7 @@ function minha_resposta(conteudo) {
 function pesquisacep(valor) {
 
     //Nova variável "cep" somente com dígitos.
-    let cep = valor.replace(/\D/g, '');
+    var cep = valor.replace(/\D/g, '');
 
     //Verifica se campo cep possui valor informado.
     if (cep != "") {
@@ -40,17 +40,17 @@ function pesquisacep(valor) {
         if(validacep.test(cep)) {
 
             //Preenche os campos com "..." enquanto consulta webservice.
-            document.getElementsById('rua').value="...";
-            document.getElementsById('numero').value="...";
-            document.getElementsById('bairro').value="...";
-            document.getElementsById('estado').value="...";
-            document.getElementsById('cidade').value="...";
+            document.getElementById('rua').value="...";
+            document.getElementById('numero').value="...";
+            document.getElementById('bairro').value="...";
+            document.getElementById('estado').value="...";
+            document.getElementById('cidade').value="...";
 
             //Cria um elemento javascript.
-            let script = document.createElement('script');
+            var script = document.createElement('script');
 
             //Sincroniza com o callback.
-            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=minha_resposta';
 
             //Insere script no documento e carrega o conteúdo.
             document.body.appendChild(script);
