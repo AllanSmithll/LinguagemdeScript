@@ -1,0 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+body {
+    background-color: rgb(190, 188, 223);
+    margin-top: 200px;
+}
+
+h1 {
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
