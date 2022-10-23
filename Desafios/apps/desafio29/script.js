@@ -1,3 +1,5 @@
+// Terminado dia 23/10/2022
+
 // Vou criar uma função básica, que será o de limpar o salário
 
 function limpar_formulario() {
@@ -11,12 +13,12 @@ function limpar_formulario() {
 // Agora, minha resposta será devolvida a partir dessa função
 
 function minha_resposta(conteudo) {
-    if (("erro" in conteudo)) {
-        document.getElementsById('rua').value=(conteudo.rua);
-        document.getElementsById('numero').value=(conteudo.numero);
-        document.getElementsById('bairro').value=(conteudo.bairro);
-        document.getElementsById('estado').value=(conteudo.estado);
-        document.getElementsById('cidade').value=(conteudo.cidade);
+    if (!("erro" in conteudo)) {
+        document.getElementById('rua').value=(conteudo.logradouro);
+        // document.getElementById('numero').value=(conteudo.numero);  Não é necessário, pois deve-se colocar manualmente
+        document.getElementById('bairro').value=(conteudo.bairro);
+        document.getElementById('estado').value=(conteudo.uf);
+        document.getElementById('cidade').value=(conteudo.localidade);
     }
     else {
         //CEP não Encontrado.
@@ -41,7 +43,7 @@ function pesquisacep(valor) {
 
             //Preenche os campos com "..." enquanto consulta webservice.
             document.getElementById('rua').value="...";
-            document.getElementById('numero').value="...";
+            document.getElementById('numero').value="";
             document.getElementById('bairro').value="...";
             document.getElementById('estado').value="...";
             document.getElementById('cidade').value="...";
