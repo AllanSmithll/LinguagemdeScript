@@ -13,7 +13,7 @@
     <main>
         <h1>Cadastrar Endereço</h1>
         <div>
-        <form method="get" action="." method="post">
+        <form method="get">
             <input type="text" name="cep" id="cep" placeholder="CEP" value="" size="40" maxlength="9"
             onblur="pesquisacep(this.value);"/>
             <br>
@@ -27,8 +27,9 @@
             <br>
             <input type="text" name="cidade" id="cidade" placeholder="Cidade" size="40">
             <br>
-            <input type="reset" name="limpar" value="Limpar Formulário">
+            <input class="submit" type="reset" name="limpar" value="Limpar Formulário">
         </form>
+        </div>
     </main>
 </body>
 </html>

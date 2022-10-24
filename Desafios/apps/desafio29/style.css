@@ -24,12 +24,12 @@ form {
     align-items: center;
 }
 
-/* .submit {
+.submit {
     color: white;
     background-color: blueviolet;
     display: flex;
     justify-content: center;
     border: 0.1rem black solid;
-    height: 50px;
+    height: 30px;
     width: 150px;
-} */
+}

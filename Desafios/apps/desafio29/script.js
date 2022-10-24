@@ -43,10 +43,6 @@ function pesquisacep(valor) {
             document.body.appendChild(script);
         }
 
-        else if (cep == " ") {
-            alert("CEP vazio.")
-        }
-
         else {
             //cep é inválido.
             alert("CEP não encontrado.");
