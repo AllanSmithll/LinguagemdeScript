@@ -10,10 +10,6 @@ function minha_resposta(conteudo) {
         document.getElementById('estado').value=(conteudo.uf);
         document.getElementById('cidade').value=(conteudo.localidade);
     }
-    else {
-        //CEP não Encontrado.
-        alert("CEP não encontrado.");
-    }
 }
 
 function pesquisacep(valor) {
@@ -22,7 +18,7 @@ function pesquisacep(valor) {
     var cep = valor.replace(/\D/g, '');
 
     //Verifica se campo cep possui valor informado.
-    if (cep != "") {
+    if (cep != " ") {
 
         //Expressão regular para validar o CEP.
         let validacep = /^[0-9]{8}$/;
@@ -45,11 +41,16 @@ function pesquisacep(valor) {
 
             //Insere script no documento e carrega o conteúdo.
             document.body.appendChild(script);
+        }
 
-        } //end if.
-    else {
-        //cep é inválido.
-        alert("CEP não encontrado.");
+        else if (cep == " ") {
+            alert("CEP vazio.")
+        }
+
+        else {
+            //cep é inválido.
+            alert("CEP não encontrado.");
         }
     }
 }
+
