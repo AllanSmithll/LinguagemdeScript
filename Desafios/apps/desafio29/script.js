@@ -1,16 +1,6 @@
 // Terminado dia 23/10/2022
 
-// Vou criar uma função básica, que será o de limpar o salário
-
-function limpar_formulario() {
-    document.getElementById('rua').value("");
-    document.getElementById('numero').value("");
-    document.getElementById('bairro').value("");
-    document.getElementById('estado').value("");
-    document.getElementById('cidade').value("");
-}
-
-// Agora, minha resposta será devolvida a partir dessa função
+// Minha resposta será devolvida a partir dessa função
 
 function minha_resposta(conteudo) {
     if (!("erro" in conteudo)) {
@@ -22,7 +12,6 @@ function minha_resposta(conteudo) {
     }
     else {
         //CEP não Encontrado.
-        limpar_formulario();
         alert("CEP não encontrado.");
     }
 }
@@ -58,14 +47,9 @@ function pesquisacep(valor) {
             document.body.appendChild(script);
 
         } //end if.
-        else {
-            //cep é inválido.
-            limpar_formulario();
-            alert("Formato de CEP inválido.");
-        }
-    } //end if.
     else {
-        //cep sem valor, limpa formulário.
-        limpar_formulario();
+        //cep é inválido.
+        alert("CEP não encontrado.");
+        }
     }
-};
+}
