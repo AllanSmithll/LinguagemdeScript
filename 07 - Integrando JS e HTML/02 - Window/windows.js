@@ -1,5 +1,5 @@
 // 26/10/2022
-// Vamos fazer com que apareça janelas que 
+// Vamos fazer com que apareça janelas que vão se sobrepo
 
 // Window.innerWidth diz a largura da janela em pixels
 
@@ -24,7 +24,7 @@ console.log(nome);
 
 const windowRef = window.open('https://developer.mozilla.org/');
 
-// Díalogo
+// Imprimir página
 
 window.print();
 
