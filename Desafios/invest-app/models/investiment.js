@@ -18,7 +18,8 @@ function create(investment) {
 }
 
 function readAll() {
-  return JSON.parse(localStorage.getItem('investments-app:investments'));
+  fetch(url)
+  return
 }
 
 function read(id) {
