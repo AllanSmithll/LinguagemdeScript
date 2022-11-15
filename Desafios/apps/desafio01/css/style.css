@@ -54,6 +54,7 @@ body {
     padding: 0.8rem 0.5rem;
 }
 
+/* Os 2 botões de Calcular e Limpar*/
 .action-control {
     display: flex;
     justify-content: space-between;
@@ -61,7 +62,6 @@ body {
     gap: 1rem;
 }
 
-/* Os 2 botões de Calcular e Limpar*/
 button { 
     text-transform: uppercase;
     padding: 1rem 3rem;
@@ -76,3 +76,77 @@ button {
 button:hover {
     opacity: 1;
 }
+
+#clear-btn {
+    background-color: #444;
+}
+
+/* Table */
+#result-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info {
+    font-size: 1.4rem;
+    color: #CCC
+}
+
+#result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+}
+
+#imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.table-header, .table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #444;
+}
+
+.table-header h4,
+.table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3),
+ .table-data p:nth-child(3) {
+    max-width: 80px;
+ }
+
+ #back-btn {
+    align-items: center;
+ }
+
+ .good {
+    color: #12db34;
+ }
+
+ .good {
+    color: #dbce12;
+ }
+
+ .good {
+    color: #db6212;
+ }
+
+ .good {
+    color: #db1912;
+ }
